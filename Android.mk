@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(BOARD_HAVE_QCOM_FM),true)
-
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -43,4 +41,3 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay --extra-packages android.support.v7.cardv
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
